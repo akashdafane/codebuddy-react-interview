@@ -1,3 +1,17 @@
 body {
   font-size: 16px;
 }
+.error, .required {
+  color: red ;
+}
+
+.tabNavigation_steps_wrapper__OCEC2 {
+  margin-left: 65px;
+}
+
+
+.form_actions__eA1cE {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}

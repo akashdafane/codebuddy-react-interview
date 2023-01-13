@@ -105,27 +105,29 @@ const FirstForm = forwardRef((props, ref) => {
   return (
     <Container>
       <Form className={styles.form_main}>
-        <div className={styles.input_group}>
-          <Input
-            onChange={handleEmail}
-            type="email"
-            value={email}
-            label="Email"
-            error={emailError}
-            isRequired
-            placeholder="Enter Email here.."
-          />
-        </div>
-        <div className={styles.input_group}>
-          <Input
-            onChange={handlePassword}
-            type="password"
-            value={password}
-            label="Password"
-            error={passwordError}
-            isRequired
-            placeholder="Enter Password here.."
-          />
+        <div className="row col-6 form-input">
+          <div className={styles.input_group}>
+            <Input
+              onChange={handleEmail}
+              type="email"
+              value={email}
+              label="Email"
+              error={emailError}
+              isRequired
+              placeholder="Enter Email here.."
+            />
+          </div>
+          <div className={styles.input_group}>
+            <Input
+              onChange={handlePassword}
+              type="password"
+              value={password}
+              label="Password"
+              error={passwordError}
+              isRequired
+              placeholder="Enter Password here.."
+            />
+          </div>
         </div>
         <FooterAction disabled={isBackDisabled} onSubmit={onSubmit} />
       </Form>
